@@ -7,6 +7,10 @@
         let htmlString = '<ul>';
         
         for (let file of data) {
+          if (file.type == "dir")
+          {
+            print(file.name);
+          }
           htmlString += `<li><a href="${file.path}">${file.name}</a></li>`;
         }
 
