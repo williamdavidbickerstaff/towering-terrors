@@ -1,5 +1,7 @@
 # towering-terrors
-database of scripts for mediawiki site.
+hosting of scripts for mediawiki site. This makes things simpler than hosting all the custom content on the mediawiki install.
+also, better for people to see the source behind the site without seeing the whole install... if they could see the whole install I think that's a security risk.
+ALSO, if i change the domain of the mediawiki install, then i wont have to change all the scripts and stuff.
 
 #### 27th of Jun
 
