@@ -27,11 +27,11 @@ let state;
 let text;
 
 function preload() {
-  backgroundImage = loadImage("../p5scripts/castleRoad/assets/path.png");
+  backgroundImage = loadImage("https://williamdavidbickerstaff.github.io/towering-terrors/scripts/houseRoad/assets/path.png");
   
   //scale part is to make sure that the json loaded is standardized with the scale;
   loadJSON(
-    "../p5scripts/castleRoad/assets/vertexPoints.json",
+    "https://williamdavidbickerstaff.github.io/towering-terrors/scripts/houseRoad/assets/vertexPoints.json",
     castleRoadJSONLoaded
   );
 
@@ -40,7 +40,7 @@ function preload() {
   
   character = new Sprite(128, 160);
   character.addAni(
-    "../p5scripts/castleRoad/assets/walkingAnimation/walkingSprite_01.png",
+    "https://williamdavidbickerstaff.github.io/towering-terrors/scripts/houseRoad/assets/walkingAnimation/walkingSprite_01.png",
     14
   );
 }
@@ -57,7 +57,7 @@ function setup() {
   canvas.style('display', "none");
 
   //creating and showing gif, then setting timeout for showing canvas.
-  let gif = createImg('../p5scripts/castleRoad/assets/castleRender.gif', () => {
+  let gif = createImg('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/houseRoad/assets/castleRender.gif', () => {
     gif.position(0,0);
     gif.size(AUTO, 1080);
     setTimeout(() => {
