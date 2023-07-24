@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>alley</title>
+    <link rel="stylesheet" href="alley.css">
+    <script src="../../../libraries/p5.min.js"></script>
+    <script src="../../../libraries/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <img src="assets/alley.png"></img>
+    <script type="text/javascript">
+      let image;
+      let footsteps;
+      let transitionTime = 5;
+      
+      function preload()
+      {
+        soundFormats('mp3');
+        footsteps = loadSound('assets/footsteps.mp3');
+      }
+
+      function setup()
+      {
+        image = select('img');
+        image.mouseOver(zoom);
+        image.style('transition', "transform " + transitionTime + "s");
+      }
+
+      function zoom()
+      {
+        footsteps.play();
+        image.style('transform', "scale(10)");
+        setTimeout(animationFinished, (transitionTime + 2) * 1000);
+      }
+
+      function animationFinished()
+      {
+        print('animationFinished');
+      }
+      
+    </script>
+  </body>
+</html>
