@@ -11,7 +11,7 @@ let roadtobeachInteractionPoints = [];
 let alleyInteractionPoints = [];
 
 function preload() {
-  loadJSON("../p5scripts/village/assets/vertexPoints.json", villageJSONLoaded);
+  loadJSON("./assets/vertexPoints.json", villageJSONLoaded);
 }
 
 function villageJSONLoaded(loadedJSON) {
@@ -22,13 +22,13 @@ function villageJSONLoaded(loadedJSON) {
 }
 
 function setup() {
-  village = createImg("../p5scripts/village/assets/village.png", () => {
+  village = createImg("./assets/village.png", () => {
     village.size(AUTO, 1000);
     //adding event listener;
     village.mouseClicked(villageClicked);
   });
 
-  rain = createImg("../p5scripts/village/assets/rain.png", () => {
+  rain = createImg("./assets/rain.png", () => {
     rain.size(AUTO, 1000);
     rain.position(0, 0);
     
