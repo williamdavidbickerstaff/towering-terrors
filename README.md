@@ -1,6 +1,6 @@
 # towering-terrors
 hosting of scripts for mediawiki site. This makes things simpler than hosting all the custom content on the mediawiki install.
-also, better for people to see the source behind the site without seeing the whole install... if they could see the whole install I think that't a security risk.
+also, better for people to see the source behind the site without seeing the whole install... if they could see the whole install I think that's a security risk.
 
 #### 27th of Jun
 
