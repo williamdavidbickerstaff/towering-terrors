@@ -5,7 +5,7 @@
 const zeroPad = (num, places) => String(num).padStart(places, '0')
 
 //type writer function that inserts break whenever it sees an asterix, also links.
-async function TypeWriter(element, text, callback = () => {}
+async function TypeWriter(element, text, callback = () => {})
 {
     for (let i = 0; i < text.length; i++) {
         await new Promise(resolve => setTimeout(resolve, 20));
