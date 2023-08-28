@@ -112,9 +112,14 @@ class Plane {
   }
 }
 
+let canvasDiv;
+
 function setup()
 {
-  createCanvas(800, 800, WEBGL);
+  canvasDiv.getElementById("canvas");
+  let canvas = createCanvas(800, 800, WEBGL);
+  canvas.parent(canvasDiv);
+
   player = new Player();
   player.usePointerLock();
   plane = new Plane(0, 0, 0, 10, 1, 10);
