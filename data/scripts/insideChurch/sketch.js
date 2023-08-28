@@ -130,7 +130,7 @@ function setup()
 
   player = new Player();
   player.usePointerLock();
-  plane = new Plane(0, 0, 0, 100, 1, 100);
+  plane = new Plane(0, 0, 0, 20, 1, 20);
   plane.fillColour = color(255, 0, 0, 50);
   plane.setPlayerAtStart(player);
 }
