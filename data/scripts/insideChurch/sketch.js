@@ -115,14 +115,18 @@ class Plane {
 let canvasDiv;
 
 let churchModel;
+let churchTexture;
 
 function preload()
 {
+  churchTexture = loadImage('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/insideChurch/assets/church/1765FD9E_c.png')
   churchModel = loadModel('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/insideChurch/assets/church/StalfosRoom.obj')
 }
 
 function setup()
 {
+  angleMode(DEGREES);
+
   canvasDiv = select('#canvas');
   let canvas = createCanvas(800, 800, WEBGL);
   canvas.parent(canvasDiv);
@@ -143,6 +147,7 @@ function draw()
   push();
   scale(10);
   rotateX(180);
+  texture(churchTexture);
   model(churchModel);
   pop();
 }
