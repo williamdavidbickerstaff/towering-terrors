@@ -142,8 +142,9 @@ function draw()
   player.update();
   plane.update();
   plane.display();
-  push();
+
+  ambientLight(255);
   texture(churchTexture);
   sphere(100);
-  pop();
+
 }
