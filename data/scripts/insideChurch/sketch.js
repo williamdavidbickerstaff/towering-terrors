@@ -123,7 +123,7 @@ function preload()
 
 function setup()
 {
-  sphereSize = 10;
+  sphereSize = 500;
   canvasDiv = select('#canvas');
   let canvas = createCanvas(800, 800, WEBGL);
   canvas.parent(canvasDiv);
@@ -131,7 +131,7 @@ function setup()
   player = new Player();
   player.usePointerLock();
   plane = new Plane(0, 0, 0, 100, 1, 100);
-  plane.fillColour = color(255, 0, 0);
+  plane.fillColour = color(255, 0, 0, 50);
   plane.setPlayerAtStart(player);
 }
 
