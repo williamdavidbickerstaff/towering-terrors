@@ -113,9 +113,7 @@ class Plane {
 }
 
 let canvasDiv;
-
 let churchTexture;
-
 let sphereSize;
 
 function preload()
@@ -132,7 +130,7 @@ function setup()
 
   player = new Player();
   player.usePointerLock();
-  plane = new Plane(0, 0, 0, 10, 1, 10);
+  plane = new Plane(0, 0, 0, 100, 1, 100);
   plane.fillColour = color(255, 0, 0);
   plane.setPlayerAtStart(player);
 }
@@ -146,6 +144,7 @@ function draw()
 
   ambientLight(255);
   texture(churchTexture);
+  noStroke();
   sphere(sphereSize);
 
 }
