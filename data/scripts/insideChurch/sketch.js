@@ -118,7 +118,7 @@ let churchModel;
 
 function preload()
 {
-  churchModel = loadModel('..p5scripts/data/insideChurch/assets/church/stalfochurch.obj')
+  churchModel = loadModel('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/insideChurch/assets/church/StalfosRoom.obj')
 }
 
 function setup()
