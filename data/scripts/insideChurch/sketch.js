@@ -114,13 +114,11 @@ class Plane {
 
 let canvasDiv;
 
-let churchModel;
 let churchTexture;
 
 function preload()
 {
-  churchTexture = loadImage('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/insideChurch/assets/church/1765FD9E_c.png')
-  churchModel = loadModel('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/insideChurch/assets/church/StalfosRoom.obj')
+  churchTexture = loadImage('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/insideChurch/360image.png')
 }
 
 function setup()
@@ -145,9 +143,7 @@ function draw()
   plane.update();
   plane.display();
   push();
-  scale(10);
-  rotateX(180);
   texture(churchTexture);
-  model(churchModel);
+  sphere(100);
   pop();
 }
