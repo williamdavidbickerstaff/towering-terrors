@@ -114,6 +114,13 @@ class Plane {
 
 let canvasDiv;
 
+let churchModel;
+
+function preload()
+{
+  churchModel = loadModel('..p5scripts/data/insideChurch/assets/church/stalfochurch.obj')
+}
+
 function setup()
 {
   canvasDiv.getElementById("canvas");
@@ -133,4 +140,8 @@ function draw()
   player.update();
   plane.update();
   plane.display();
+  push();
+  scale(10);
+  model(churchModel);
+  pop();
 }
