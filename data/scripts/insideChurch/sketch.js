@@ -123,8 +123,6 @@ function preload()
 
 function setup()
 {
-  angleMode(DEGREES);
-
   canvasDiv = select('#canvas');
   let canvas = createCanvas(800, 800, WEBGL);
   canvas.parent(canvasDiv);
