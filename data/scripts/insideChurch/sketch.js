@@ -123,7 +123,7 @@ function preload()
 
 function setup()
 {
-  canvasDiv.getElementById("canvas");
+  canvasDiv = select('#canvas');
   let canvas = createCanvas(800, 800, WEBGL);
   canvas.parent(canvasDiv);
 
