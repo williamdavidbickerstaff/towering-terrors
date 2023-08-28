@@ -142,6 +142,7 @@ function draw()
   plane.display();
   push();
   scale(10);
+  rotateX(180);
   model(churchModel);
   pop();
 }
