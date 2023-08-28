@@ -27,14 +27,14 @@ let state;
 let text;
 
 function preload() {
-  backgroundImage = loadImage('../p5scripts/castleoftime/Assets/night.png');
+  backgroundImage = loadImage('../scripts/castleoftime/Assets/night.png');
 
   character = new Sprite(128, 160);
-  character.addAni('../p5scripts/castleoftime/Assets/walkingAnimation/walkingSprite_01.png', 14);
+  character.addAni('../scripts/castleoftime/Assets/walkingAnimation/walkingSprite_01.png', 14);
 
   //scale part is to make sure that the json loaded is standardized with the scale;
   jsonDone = false;
-  loadJSON('../p5scripts/castleoftime/Assets/vertexPoints.json', jsonLoaded);
+  loadJSON('../scripts/castleoftime/Assets/vertexPoints.json', jsonLoaded);
 
   //changing pointer to hand thingy so that the user knows how to click;
   document.getElementById("canvas").style.cursor = "url(../cursor2.png), auto";
