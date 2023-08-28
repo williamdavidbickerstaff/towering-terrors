@@ -61,7 +61,6 @@ function setup() {
 
   //load up state, and execute first state;
   state = 0;
-  TypeWriter(text, "welcome to my temple");
 }
 
 function draw() {
@@ -126,11 +125,9 @@ function mousePressed() {
   state++;
   if (state == 1) {
     text.html('');
-    TypeWriter(text, 'click to move around');
   }
   if (state == 2) {
     text.html('');
-    TypeWriter(text, 'testing two');
   }
 }
 
