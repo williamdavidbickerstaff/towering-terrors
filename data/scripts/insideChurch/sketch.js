@@ -143,6 +143,6 @@ function draw()
 
   ambientLight(255);
   texture(churchTexture);
-  sphere(99999);
+  sphere(1);
 
 }
