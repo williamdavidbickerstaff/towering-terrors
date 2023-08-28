@@ -116,6 +116,8 @@ let canvasDiv;
 
 let churchTexture;
 
+let sphereSize;
+
 function preload()
 {
   churchTexture = loadImage('https://williamdavidbickerstaff.github.io/towering-terrors/scripts/insideChurch/360image.png')
@@ -123,6 +125,7 @@ function preload()
 
 function setup()
 {
+  sphereSize = 10;
   canvasDiv = select('#canvas');
   let canvas = createCanvas(800, 800, WEBGL);
   canvas.parent(canvasDiv);
@@ -143,6 +146,6 @@ function draw()
 
   ambientLight(255);
   texture(churchTexture);
-  sphere(1);
+  sphere(sphereSize);
 
 }
